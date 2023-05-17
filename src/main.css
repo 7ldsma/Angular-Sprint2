@@ -10817,4 +10817,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.card {
+  margin: 10px;
+  text-align: center;
+  border-top: 0px;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
