@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar my-5 navbar-expand-md bg-white">
+            <div class="container-xxl">
+                <a href="#hero" class="navbar-brand">
+                    <img src="/imagenes/logo-bookmark.svg" alt="logo-bookmark">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="/imagenes/icon-hamburger.svg" alt="toggle menu">
+                </button>
+                <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
+                    <ul class="navbar-nav gap-5 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <button class="btn btn-secondary text-white fw-bold px-5" type="submit">LOGIN</button>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <section id="hero">
+            <div class="row justify-content-center align-items-center mt-5 d-flex flex-row-reverse">
+                <div class="col-md-5 text-center m-3">
+                    <img class="img-fluid" src="/imagenes/illustration-hero.svg" alt="Hero image">
+
+                </div>
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <a href="#" class="btn btn-primary btn-lg shadow-sm">Get it on Chrome</a>
+                    <a href="#" class="btn btn-light btn-lg shadow-sm">Get it on Firefox</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5" id="features">
+            <div class="container-lg">
+                <div class="row justify-content-center">
+                    <div class="my-5 col-md-5 text-center">
+                        <h3>Features</h3>
+                        <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-3 row justify-content-center">
+                <div class="col col-md-6 text-center">
+                    <ul class="nav nav-pills mb-5 gap-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-simple-tab" data-bs-toggle="pill" data-bs-target="pills-simple" type="button" role="tab" aria-controls="pills-simple" aria-selected="true">Simple Bookmarking</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-speedy-tab" data-bs-toggle="pill" data-bs-target="#pills-speedy" type="button" role="tab" aria-controls="pills-speedy" aria-selected="false">Speedy Searching</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-easy-tab" data-bs-toggle="pill" data-bs-target="#pills-easy" type="button" role="tab" aria-controls="pills-easy" aria-selected="false">Easy Sharing</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-simple-tab" role="tabpanel" aria-labelledby="pills-simple-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col col-md-12 d-flex justify-content-center align-items-center">
+                                <div>
+                                    <img class="img-fluid" src="/imagenes/illustration-features-tab-1.svg" alt="feature 1">
+                                </div>
+                                <div class="col-md-5">
+                                    <h3>Bookmark in one click</h3>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-speedy-tab" role="tabpanel" aria-labelledby="pills-speedy-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col col-md-12">
+                                <div>
+                                    <img src="/imagenes/illustration-features-tab-2.svg" alt="feature 2">
+                                </div>
+                                <div class="">
+                                    <h3>Search like a thunder</h3>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-easy-tab" role="tabpanel" aria-labelledby="pills-easy-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col col-md-12">
+                                <div>
+                                    <img src="/imagenes/illustration-features-tab-3.svg" alt="feature 3">
+                                </div>
+                                <div class="">
+                                    <h3>Share it in one click</h3>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </d>
+
+        </section>
+
+        <section class="my-5" id="browser">
+
+            <div class="container-lg">
+                <div class="row justify-content-center ">
+                    <div class="my-2 col-md-5 text-center">
+                        <h3>Download the extension</h3>
+                        <p>We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to prioritize.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center my-5">
+                <div class="col-8 col-lg-4 col-xl-3 text-center">
+                    <div class="card shadow m-1 border-0">
+                        <img src="/imagenes/logo-chrome.svg" class="card-img-top w-25 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Chrome</h5>
+                            <p class="card-text">Minimum version 62.</p>
+                            <img src="/imagenes/bg-dots.svg" class="img-fluid " alt="">
+                            <a href="#" class="btn btn-primary my-2">Add & Install Extension</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-3 text-center mt-2">
+                    <div class="card shadow m-1 border-0">
+                        <img src="/imagenes/logo-firefox.svg" class="card-img-top w-25 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Firefox</h5>
+                            <p class="card-text">Minimum version 55.</p>
+                            <img src="/imagenes/bg-dots.svg" class="img-fluid " alt="">
+                            <a href="#" class="btn btn-primary my-2">Add & Install Extension</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-3 text-center mt-4">
+                    <div class="card shadow m-1 border-0">
+                        <img src="/imagenes/logo-opera.svg" class="card-img-top w-25 mx-auto mt-5" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Add to Opera</h5>
+                            <p class="card-text">Minimum version 46.</p>
+                            <img src="/imagenes/bg-dots.svg" class="img-fluid " alt="">
+                            <a href="#" class="btn btn-primary my-2">Add & Install Extension</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+        <section class="my-5" id="faq">
+            <div class="container-lg">
+                <div class="row justify-content-center">
+                    <div class="my-5 col-md-5 text-center">
+                        <h3>Frequently Asked Questions</h3>
+                        <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  What is a Bookmark?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  How can I request a new browser?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Is there a mobile App?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but
+                                        just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  What about other Chromium browsers?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but
+                                        just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        </div>
+
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
