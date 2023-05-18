@@ -1,9 +1,44 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 @import "../node_modules/bootstrap/scss/bootstrap";
+.nav-pills .nav-link {
+    color: black;
+    border-bottom: 5px;
+}
+
+.nav-pills .nav-link {
+    background-color: transparent;
+    color: #000;
+    border-radius: 0%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.413);
+    padding: 20px 40px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    opacity: 1;
+    border-bottom: 2px solid $secondary;
+}
+
 .card {
     margin: 10px;
     text-align: center;
     border-top: 0px;
     border-radius: 10px;
+}
+
+#firefox {
+    bottom: 50%;
+    transform: translateY(10%);
+}
+
+#opera {
+    bottom: 50%;
+    transform: translateY(20%);
+}
+
+.accordion-button {
+    font-weight: bold;
 }
