@@ -10,37 +10,40 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <!-- HEADER / NAV -->
+
+    <div class="container-xxl">
         <nav class="navbar my-5 navbar-expand-md bg-white">
-            <div class="container-xxl">
-                <a href="#hero" class="navbar-brand">
-                    <img src="/imagenes/logo-bookmark.svg" alt="logo-bookmark">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="#hero" class="navbar-brand">
+                <img src="/imagenes/logo-bookmark.svg" alt="logo-bookmark">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="/imagenes/icon-hamburger.svg" alt="toggle menu">
                 </button>
-                <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
-                    <ul class="navbar-nav gap-5 fw-bold">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PRICING</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
-                        </li>
-                        <button class="btn btn-secondary text-white fw-bold px-5" type="submit">LOGIN</button>
-                    </ul>
-                </div>
-
+            <div class="collapse navbar-collapse justify-content-end align-center" id="navbarNav">
+                <ul class="navbar-nav gap-5 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <button class="btn btn-secondary text-white fw-bold px-5" type="submit">LOGIN</button>
+                </ul>
             </div>
+
         </nav>
+
+        <!-- HERO SECTION -->
+
         <section id="hero">
             <div class="row justify-content-center align-items-center mt-5 d-flex flex-row-reverse">
                 <div class="col-md-5 text-center m-3">
-                    <img class="img-fluid" src="/imagenes/illustration-hero.svg" alt="Hero image">
-
+                    <img class="img-fluid z-1" src="/imagenes/illustration-hero.svg" alt="Hero image">
                 </div>
                 <div class="col-md-5 text-center text-md-start">
                     <h1>A Simple Bookmark Manager</h1>
@@ -51,85 +54,91 @@
             </div>
         </section>
 
+        <!-- TABS / FEATURES -->
+
+
         <section class="my-5" id="features">
-            <div class="container-lg">
-                <div class="row justify-content-center">
-                    <div class="my-5 col-md-5 text-center">
-                        <h3>Features</h3>
-                        <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="my-5 col-md-5 text-center">
+                    <h3>Features</h3>
+                    <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 </div>
             </div>
-            <div class="container d-flex flex-column justify-content-center align-items-center">
 
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Simple Bookmarking</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Speedy Searching</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Easy Sharing</button>
-                    </li>
+            <div class="row d-flex flex-column justify-content-center align-items-center">
+                <div class="col col-md-10">
 
-                </ul>
-                <div class="tab-content my-5" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                        <div class="row align-items-center gap-5">
-                            <div class="col text-center">
-                                <img src="/imagenes/illustration-features-tab-1.svg" alt="Simple bookmarking">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Simple Bookmarking</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Speedy Searching</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Easy Sharing</button>
+                        </li>
 
-                            </div>
-                            <div class="col text-center text-lg-start">
-                                <h2 class="fw-bold">Bookmark in one click</h2>
-                                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
-                                <a href="#" class="btn btn-primary btn-lg shadow-sm px-4">More info</a>
-                            </div>
+                    </ul>
+                    <div class="tab-content my-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="row align-items-center gap-5">
+                                <div class="col text-center">
+                                    <img src="/imagenes/illustration-features-tab-1.svg" alt="Simple bookmarking">
 
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                        <div class="row align-items-center gap-5">
-                            <div class="col text-center">
-                                <img src="/imagenes/illustration-features-tab-2.svg" alt="Speedy Searching">
-                            </div>
-                            <div class="col text-center text-lg-start">
-                                <h2 class="fw-bold">Intelligent Search</h2>
-                                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all your bookmarks.</p>
-                                <a href="#" class="btn btn-primary btn-lg shadow-sm px-4">More info</a>
+                                </div>
+                                <div class="col text-center text-lg-start">
+                                    <h2 class="fw-bold">Bookmark in one click</h2>
+                                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+                                    <a href="#" class="btn btn-primary btn-lg shadow-sm px-4">More info</a>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                        <div class="row align-items-center gap-5">
-                            <div class="col text-center">
-                                <img src="/imagenes/illustration-features-tab-3.svg" alt="Easy sharing">
-                            </div>
-                            <div class="col text-center text-lg-start">
-                                <h2 class="fw-bold">Share your bookmarks</h2>
-                                <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                                <a href="#" class="btn btn-primary btn-lg shadow-sm px-4">More info</a>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="row align-items-center gap-5">
+                                <div class="col text-center">
+                                    <img src="/imagenes/illustration-features-tab-2.svg" alt="Speedy Searching">
+                                </div>
+                                <div class="col text-center text-lg-start">
+                                    <h2 class="fw-bold">Intelligent Search</h2>
+                                    <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all your bookmarks.</p>
+                                    <a href="#" class="btn btn-primary btn-lg shadow-sm px-4">More info</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="row align-items-center gap-5">
+                                <div class="col text-center">
+                                    <img src="/imagenes/illustration-features-tab-3.svg" alt="Easy sharing">
+                                </div>
+                                <div class="col text-center text-lg-start">
+                                    <h2 class="fw-bold">Share your bookmarks</h2>
+                                    <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                                    <a href="#" class="btn btn-primary btn-lg shadow-sm px-4">More info</a>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
+
 
             </div>
 
         </section>
 
+        <!-- CARDS / BROWSERS -->
+
         <section class="my-5" id="browser">
 
-            <div class="container-lg">
-                <div class="row justify-content-center ">
-                    <div class="my-2 col-md-5 text-center">
-                        <h3>Download the extension</h3>
-                        <p>We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to prioritize.</p>
-                    </div>
+            <div class="row justify-content-center ">
+                <div class="my-2 col-md-5 text-center">
+                    <h3>Download the extension</h3>
+                    <p>We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to prioritize.</p>
                 </div>
             </div>
+
             <div class="row justify-content-center position-relative align-items-center">
                 <div class="col-8 col-lg-4 col-xl-3">
                     <div class="card shadow">
@@ -164,68 +173,66 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
 
         </section>
 
-        <section class="my-5" id="faq">
-            <div class="container-lg">
-                <div class="row justify-content-center">
-                    <div class="my-5 col-md-5 text-center">
-                        <h3>Frequently Asked Questions</h3>
-                        <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        <!-- FAQ / ACCORDEON -->
 
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <section class="my-5" id="faq">
+
+            <div class="row justify-content-center">
+                <div class="my-5 col-md-5 text-center">
+                    <h3>Frequently Asked Questions</h3>
+                    <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                   What is a Bookmark?
                                 </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                </div>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                                   How can I request a new browser?
                                 </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                </div>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                   Is there a mobile App?
                                 </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but
-                                        just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                </div>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                                   What about other Chromium browsers?
                                 </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but
-                                        just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                </div>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="text-center">
                 <a href="#" class="btn btn-primary btn-lg shadow-sm px-4">More info</a>
             </div>
@@ -233,60 +240,44 @@
         </section>
 
     </div>
-    <section id="footer">
-        <div class="bg-primary" style="height: 300px;">
-            <div class="row justify-content-center">
-                <div class="my-5 col-lg-5 text-center text-white">
-                    <h5 class="fw-bold my-4">35.000+ ALREADY JOINED</h5>
-                    <h2 class="mb-5">Stay up-to-date with what we're doing</h2>
-                    <form>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
-                            </div>
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary text-white">Contact Us</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+
+    <!-- FOOTER -->
+
+
+    <div class="container-fluid bg-primary" style="height: 300px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 text-center text-white">
+                <h5 class="fw-bold my-4">35.000+ ALREADY JOINED</h5>
+                <h2 class="mb-5">Stay up-to-date with what we're doing</h2>
+                <form>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+
+                    <button type="submit" class="btn btn-secondary text-white">Contact Us</button>
+                </form>
             </div>
         </div>
+    </div>
 
-
-        <nav class="navbar sticky-bottom bg-dark navbar-expand">
-            <div class="container">
-                <div class="row d-flex">
-                    <div class="col">
-                        <a href="#hero" class="navbar-brand">
-                            <img src="/imagenes/logo-bookmark.svg" alt="logo-bookmark">
-                        </a>
-
-                    </div>
-                    <div class="col" id="navbarNav">
-                        <ul class="navbar-nav gap-2">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">FEATURES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">PRICING</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
+    <nav class="navbar bg-dark py-3">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="/imagenes/logo-bookmark.svg" alt="Bookmark">
+                </a>
             </div>
-        </nav>
-        <div class="col">
-            <img class="btn" src="/imagenes/icon-facebook.svg" alt="Facebook icon">
-            <img class="btn" src="/imagenes/icon-twitter.svg" alt="Twiter">
-        </div>
 
-    </section>
+            <div>
+                <a class="nav-link-footer" href="#">FEATURES</a>
+                <a class="nav-link-footer" href="#">PRICING</a>
+                <a class="nav-link-footer" href="#">CONTACT</a>
+            </div>
+
+            <div>
+                <img src="/imagenes/icon-facebook.svg" alt="Facebook icon">
+                <img src="/imagenes/icon-twitter.svg" alt="Twitter icon">
+            </div>
+        </div>
+    </nav>
 
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

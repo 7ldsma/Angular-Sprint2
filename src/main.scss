@@ -1,6 +1,14 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 @import "../node_modules/bootstrap/scss/bootstrap";
+.figure {
+    background-color: $primary;
+    height: 200px;
+    width: 500px;
+    transform: translateX(40%);
+    transform: translateY(-60%);
+}
+
 .nav-pills .nav-link {
     color: black;
     border-bottom: 5px;
@@ -41,4 +49,12 @@ $secondary: #FA5959;
 
 .accordion-button {
     font-weight: bold;
+}
+
+.nav-link-footer {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
 }
