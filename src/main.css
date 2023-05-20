@@ -10879,16 +10879,29 @@ body {
   border-radius: 10px;
 }
 
-#firefox {
+.card img:nth-child(0n+1) {
+  width: 25%;
+  margin: 50px auto 0 auto;
+}
+
+#extensions .card:nth-child(2) {
   bottom: 50%;
   transform: translateY(10%);
 }
 
-#opera {
+#extensions .card:nth-child(3) {
   bottom: 50%;
   transform: translateY(20%);
 }
 
+/* #firefox {
+    bottom: 50%;
+    transform: translateY(10%);
+} */
+/* #opera {
+    bottom: 50%;
+    transform: translateY(20%);
+} */
 .accordion-button {
   font-weight: bold;
 }
