@@ -1,12 +1,37 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 @import "../node_modules/bootstrap/scss/bootstrap";
-.figure {
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-btn {
+    color: white;
+}
+
+.row {
+    margin: 100px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.figureright {
     background-color: $primary;
-    height: 200px;
-    width: 500px;
-    transform: translateX(40%);
-    transform: translateY(-60%);
+    height: 70%;
+    width: 150%;
+    position: absolute;
+    z-index: -1;
+    translate: 20% -90%;
+}
+
+.figureleft {
+    background-color: $primary;
+    height: 70%;
+    width: 150%;
+    position: absolute;
+    z-index: -1;
+    translate: -70% -70%;
 }
 
 .nav-pills .nav-link {
@@ -51,10 +76,90 @@ $secondary: #FA5959;
     font-weight: bold;
 }
 
+.invalid-feedback {
+    background-color: $secondary;
+    color: white;
+    border-radius: 10px;
+}
+
 .nav-link-footer {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
+}
+
+.social {
+    margin: 0px 20px;
+}
+
+//HOVER
+.nav-item a:hover {
+    color: $secondary;
+}
+
+.nav-btn:hover {
+    color: $secondary;
+    background: white;
+    border: 2px solid $secondary;
+}
+
+.btn-primary:hover {
+    color: $primary;
+    background: transparent;
+    border: 2px solid $primary;
+}
+
+.btn-light:hover {
+    color: gray;
+    background: transparent;
+    border: 2px solid gray;
+}
+
+.nav-pills .nav-link:hover {
+    color: $secondary;
+}
+
+.accordion-button:hover {
+    color: $secondary;
+}
+
+.nav-link-footer:hover {
+    color: $secondary;
+}
+
+.social:hover {
+    color: $secondary;
+}
+
+//FORM MOBILE
+// FULL SCREEN MENU
+@include media-breakpoint-down(lg) {
+    .wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(7, 0, 43, 0.689);
+    }
+    .wrapper ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        list-style: none;
+        text-align: center;
+    }
+    .wrapper ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .navbar-toggler {
+        z-index: 2;
+        text-align: center;
+        cursor: pointer;
+    }
 }
